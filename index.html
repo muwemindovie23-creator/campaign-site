@@ -250,6 +250,12 @@
       margin-right: 1rem;
       flex-shrink: 0;
     }
+
+    span{
+      cursor: pointer;
+      color: #ffd633; 
+      font-weight: bold;
+    }
     
     /* Plan section */
     .plan {
@@ -507,8 +513,8 @@
               <i class="fas fa-book"></i>
             </div>
             <div>
-              <h3>Enhanced Academic Resources</h3>
-              <p>Extended library hours, expanded digital resources, and modernized study spaces.</p>
+              <h3>Academic Resources and Accessibility</h3>
+              <p class="test">Advocate for sensitization workshops of access to digital resources. <br> Work with administration to expand access to online platforms for learning and research. <span>more</span></p>
             </div>
           </div>
           
@@ -517,8 +523,8 @@
               <i class="fas fa-hands-helping"></i>
             </div>
             <div>
-              <h3>Fair Academic Policies</h3>
-              <p>Transparent grading systems and equitable academic opportunity for all students.</p>
+              <h3>Support Systems for Students</h3>
+              <p class="test">Create a structured peer-to-peer tutoring program to support students struggling in key subjects. <span>more</span></p>
             </div>
           </div>
           
@@ -527,8 +533,8 @@
               <i class="fas fa-hands-helping"></i>
             </div>
             <div>
-              <h3>Peer Mentorship Programs</h3>
-              <p>Structured support system connecting upperclassmen with incoming students.</p>
+              <h3>Communication and Feedback</h3>
+              <p class="test">Establish clear and reliable communication channels where students can report academic challenges and receive timely responses. <span>more</span></p>
             </div>
           </div>
           
@@ -537,8 +543,8 @@
               <i class="fas fa-graduation-cap"></i>
             </div>
             <div>
-              <h3>Career Development</h3>
-              <p>Workshops, seminars, and networking events focused on post-graduation success.</p>
+              <h3>Technology and Academic Services</h3>
+              <p class="test">Liaise directly with the IT department on behalf of students to address problems with the student portal, especially during registration and exam result periods. <span>more</span></p>
             </div>
           </div>
         </div>
@@ -569,8 +575,9 @@
         
         <div class="timeline-item">
           <div class="timeline-content">
-            <h3>Month 2: Resource Expansion</h3>
-            <p>Implement extended library hours and launch digital resource initiative.</p>
+            <h3>Month 2: Opportunities Beyond the Classroom</h3>
+            <p class="test">Advocate for more industry seminars and career talks to connect students
+               with professionals.<span>more</span></p>
           </div>
         </div>
         
@@ -616,4 +623,42 @@
   </footer>
 
 </body>
+
+<script>
+  let fMani = document.getElementsByClassName('test')[0]
+  let fManiText = "Advocate for sensitization workshops of access to digital resources. <br> Work with administration to expand access to online platforms for learning and research. <span>more</span>";
+  let fManiChange = "Advocate for sensitization workshops of access to digital resources. <br> Work with administration to expand access to online platforms for learning and research. <br> Establish a central resource hub where students can easily find notes, past papers and study materials from previous years."
+  
+
+  let sMani = document.getElementsByClassName('test')[1]
+  let sManiText = "Create a structured peer-to-peer tutoring program to support students struggling in key subjects. <span>more</span>";
+  let sManiChange = "Create a structured peer-to-peer tutoring program to support students struggling in key subjects.  <br> Advocate for the university to formally recognize student tutors as credible academic mentors, ensuring their contribution is valued and rewarded. <br> This recognition could take the form of official certificates, inclusion on academic transcripts, or priority consideration for academic opportunities such as research assistantships and internships."
+
+  let tMani = document.getElementsByClassName('test')[2]
+  let tManiText = "Establish clear and reliable communication channels where students can report academic challenges and receive timely responses. <span>more</span>";
+  let tManiChange = "Establish clear and reliable communication channels where students can report academic challenges and receive timely responses. <br> Prioritize students who often face difficulties with the student portal, such as those transitioning to law programs, repeating courses, <br> or changing programs, ensuring their concerns are addressed fairly and quickly."
+  
+  let foMani = document.getElementsByClassName('test')[3]
+  let foManiText = "Liaise directly with the IT department on behalf of students to address problems with the student portal, especially during registration and exam result periods. <span>more</span>";
+  let foManiChange = "Liaise directly with the IT department on behalf of students to address problems with the student portal, especially during registration and exam result periods. <br> Advocate for long-term solutions to prevent recurring frustrations. <br> Specifically, I will push for a system that ensures the portal only opens for student access once all grades have been published. This will reduce congestion, improve fairness, and restore trust in the academic process."
+
+  let plan = document.getElementsByClassName('test')[4]
+  let planText = "Advocate for more industry seminars and career talks to connect students with professionals.<span>more</span>";
+  let planChange = "Advocate for more industry seminars and career talks to connect students with professionals. Forge partnerships to create internship and mentorship opportunities with companies and alumni. Implement practical workshops for skill development and building a professional online presence to enhance employability."
+
+  const changeText = (test, text1, text2) => {
+  test.innerHTML = text1
+  test.addEventListener('click', () => {
+    test.innerHTML === text1 ? test.innerHTML = text2 : 
+    test.innerHTML = text1;    
+})
+}
+
+changeText(fMani, fManiText, fManiChange)
+changeText(sMani, sManiText, sManiChange)
+changeText(tMani, tManiText, tManiChange)
+changeText(foMani, foManiText, foManiChange)
+changeText(plan, planText, planChange)
+</script>
+
 </html>
