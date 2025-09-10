@@ -3,469 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vote Muwe Ndovie — Director of Academics</title>
+  <title>Vote Muwe Ndovie & Victor Tseka Phiri — Director of Academics</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    /* Base styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    html{
-      scroll-behavior: smooth;
-    }
-    
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    /* Header styles */
-    header {
-      background: linear-gradient(135deg, #004aad 0%, #00264d 100%);
-      color: #fff;
-      padding: 3rem 2rem;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .header-content {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-bottom: 0.5rem;
-      animation: fadeInDown 1s ease;
-    }
-    
-    header p {
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      animation: fadeInUp 1s ease;
-    }
-    
-    .profile-container {
-      width: 180px;
-      height: 180px;
-      margin: 0 auto 1.5rem;
-      border-radius: 50%;
-      border: 5px solid rgba(255, 255, 255, 0.3);
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      animation: scaleIn 1s ease;
-      background: #e0e0e0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .profile-placeholder {
-      font-size: 5rem;
-      color: #9a9a9a;
-    }
-    
-    /* Button styles */
-    .btn {
-      display: inline-block;
-      padding: 0.9rem 2rem;
-      background: #ffcc00;
-      color: #000;
-      font-weight: bold;
-      border-radius: 50px;
-      text-decoration: none;
-      margin-top: 1rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      border: 2px solid #ffcc00;
-    }
-    
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-      background: #ffd633;
-    }
-    
-    .btn-outline {
-      background: transparent;
-      color: #ffcc00;
-      border: 2px solid #ffcc00;
-    }
-    
-    .btn-outline:hover {
-      background: #ffcc00;
-      color: #000;
-    }
-    
-    /* Section styles */
-    section {
-      padding: 5rem 2rem;
-    }
-    
-    .section-title {
-      text-align: center;
-      margin-bottom: 3rem;
-      position: relative;
-    }
-    
-    .section-title h2 {
-      font-size: 2.5rem;
-      color: #004aad;
-      display: inline-block;
-      margin-bottom: 1rem;
-    }
-    
-    .section-title h2:after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background: #ffcc00;
-      border-radius: 2px;
-    }
-    
-    /* Why Me section */
-    .why-me {
-      background: #fff;
-    }
-    
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    
-    .feature-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 2rem;
-      width: 100%;
-      max-width: 350px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      transition: all 0.3s ease;
-      text-align: center;
-      border-top: 5px solid #004aad;
-    }
-    
-    .feature-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-    }
-    
-    .feature-icon {
-      font-size: 3rem;
-      color: #004aad;
-      margin-bottom: 1.5rem;
-    }
-    
-    .feature-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: #004aad;
-    }
-    
-    /* Vision section */
-    .vision {
-      background: #f0f5ff;
-    }
-    
-    .vision-content {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 3rem;
-    }
-    
-    .vision-image {
-      flex: 1;
-      min-width: 300px;
-      height: 600px;
-      background: #e0e0e0;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-    }
-    
-    .vision-image i {
-      font-size: 5rem;
-      color: #9a9a9a;
-    }
-    
-    .vision-list {
-      flex: 1;
-      min-width: 300px;
-    }
-    .icon{
-      position: relative;
-      top: 75px;
-      width: 200px;
-    }
-    
-    .vision-item {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 1.5rem;
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
-    }
-    
-    .vision-item:hover {
-      transform: translateX(5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    }
-    
-    .vision-icon {
-      font-size: 1.8rem;
-      color: #ffcc00;
-      margin-right: 1rem;
-      flex-shrink: 0;
-    }
-
-    span{
-      cursor: pointer;
-      color: #ffd633; 
-      font-weight: bold;
-    }
-    
-    /* Plan section */
-    .plan {
-      background: #fff;
-    }
-    
-    .timeline {
-      position: relative;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    .timeline:before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 4px;
-      height: 100%;
-      background: #004aad;
-      border-radius: 2px;
-    }
-    .campaign{
-      width: 100%;
-    }
-    
-    .timeline-item {
-      width: 50%;
-      padding: 20px 40px;
-      position: relative;
-      animation: fadeIn 1s ease;
-    }
-    
-    .timeline-item:nth-child(odd) {
-      left: 0;
-      text-align: right;
-    }
-    
-    .timeline-item:nth-child(even) {
-      left: 50%;
-    }
-    
-    .timeline-content {
-      background: #f0f5ff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-      position: relative;
-    }
-    
-    .timeline-content:after {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: #004aad;
-      border-radius: 50%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    
-    .timeline-item:nth-child(odd) .timeline-content:after {
-      right: -50px;
-    }
-    
-    .timeline-item:nth-child(even) .timeline-content:after {
-      left: -50px;
-    }
-    
-    .timeline-item h3 {
-      color: #004aad;
-      margin-bottom: 0.5rem;
-    }
-    
-    /* Get Involved section */
-    .get-involved {
-      background: linear-gradient(135deg, #004aad 0%, #00264d 100%);
-      color: #fff;
-      text-align: center;
-    }
-    
-    .get-involved .section-title h2 {
-      color: #fff;
-    }
-    
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    
-    .social-link {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 1.5rem;
-      transition: all 0.3s ease;
-    }
-    
-    .social-link:hover {
-      background: #ffcc00;
-      color: #000;
-      transform: translateY(-5px);
-    }
-    
-    /* Footer */
-    footer {
-      background: #00264d;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    
-    @keyframes fadeInUp {
-      from { 
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to { 
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    @keyframes fadeInDown {
-      from { 
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to { 
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    @keyframes scaleIn {
-      from { 
-        opacity: 0;
-        transform: scale(0.8);
-      }
-      to { 
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-    
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      
-      header p {
-        font-size: 1.2rem;
-      }
-      
-      .timeline:before {
-        left: 30px;
-      }
-      
-      .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 20px;
-        text-align: left;
-      }
-      
-      .timeline-item:nth-child(odd),
-      .timeline-item:nth-child(even) {
-        left: 0;
-      }
-      
-      .timeline-item:nth-child(odd) .timeline-content:after,
-      .timeline-item:nth-child(even) .timeline-content:after {
-        left: -40px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
     <div class="container header-content">
-      <div class="profile-container">
-        <div class="profile-placeholder">
-          <img src="IMG_0717.jpeg" class="icon">
+      <div class="profiles-container">
+        <div class="profile-container female">
+          <div class="profile-placeholder">
+            <img src="IMG_0717.jpeg" alt="Muwemi Ndovie" class="profile-img">
+          </div>
+          <div class="profile-label">Muwemi Ndovie</div>
+        </div>
+        <div class="profile-container male">
+          <div class="profile-placeholder">
+            <img src="Tseka.jpeg" alt="Victor Tseka Phiri" class="profile-img">
+          </div>
+          <div class="profile-label">Victor Tseka Phiri</div>
         </div>
       </div>
-      <h1>Vote Muwemi Ndovie</h1>
+      <h1>Vote For Our Team</h1>
       <p>For Director of Academics | Student Representative Council</p>
-      <a href="#vision" class="btn">Explore My Vision</a>
+      <a href="#vision" class="btn">Explore Our Vision</a>
     </div>
   </header>
 
+  <!-- Rest of the content remains the same as before -->
   <section class="why-me">
     <div class="container">
       <div class="section-title">
-        <h2>Why I'm The Right Choice</h2>
+        <h2>Why We're The Right Choice</h2>
       </div>
       
       <div class="features">
@@ -474,7 +44,7 @@
             <i class="fas fa-brain"></i>
           </div>
           <h3>Academic Excellence</h3>
-          <p>A two-times Dean’s List student with a proven track record of academic achievement</p>
+          <p>A two-times Dean's List student with a proven track record of academic achievement</p>
         </div>
         
         <div class="feature-card">
@@ -499,12 +69,12 @@
   <section class="vision" id="vision">
     <div class="container">
       <div class="section-title">
-        <h2>My Vision For Our Academic Future</h2>
+        <h2>Our Vision For Our Academic Future</h2>
       </div>
       
       <div class="vision-content">
         <div class="vision-image">
-          <img src="IMG_0681.jpeg" class="campaign">
+          <img src="poster.jpeg" class="campaign">
         </div>
         
         <div class="vision-list">
@@ -555,7 +125,7 @@
   <section class="plan">
     <div class="container">
       <div class="section-title">
-        <h2>My 100-Day Action Plan</h2>
+        <h2>Our 100-Day Action Plan</h2>
       </div>
       
       <div class="timeline">
@@ -599,7 +169,7 @@
       <p>Your voice matters—let's work together to shape our academic community.</p>
       <p>Reach out with ideas, concerns, or to join our team of volunteers.</p>
       
-      <a href="mailto:bme22-mndovie@mubas.ac.mw" class="btn btn-outline">Contact Me</a>
+      <a href="mailto:bme22-mndovie@mubas.ac.mw" class="btn btn-outline">Contact Us</a>
       
       <div class="social-links">
         <a href="https://www.tiktok.com/@its_muwe?_t=ZM-8zOPQ0siJKK&_r=1" class="social-link">
@@ -617,47 +187,10 @@
 
   <footer>
     <div class="container">
-      <p>© 2025 Vote Muwe Ndovie | Academic Director Campaign</p>
+      <p>© 2025 Vote Muwe Ndovie & Victor Tseka Phiri | Academic Director Campaign</p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
-
-<script>
-  let fMani = document.getElementsByClassName('test')[0]
-  let fManiText = "Advocate for sensitization workshops of access to digital resources. <br> Work with administration to expand access to online platforms for learning and research. <span>more</span>";
-  let fManiChange = "Advocate for sensitization workshops of access to digital resources. <br> Work with administration to expand access to online platforms for learning and research. <br> Establish a central resource hub where students can easily find notes, past papers and study materials from previous years."
-  
-
-  let sMani = document.getElementsByClassName('test')[1]
-  let sManiText = "Create a structured peer-to-peer tutoring program to support students struggling in key subjects. <span>more</span>";
-  let sManiChange = "Create a structured peer-to-peer tutoring program to support students struggling in key subjects.  <br> Advocate for the university to formally recognize student tutors as credible academic mentors, ensuring their contribution is valued and rewarded. <br> This recognition could take the form of official certificates, inclusion on academic transcripts, or priority consideration for academic opportunities such as research assistantships and internships."
-
-  let tMani = document.getElementsByClassName('test')[2]
-  let tManiText = "Establish clear and reliable communication channels where students can report academic challenges and receive timely responses. <span>more</span>";
-  let tManiChange = "Establish clear and reliable communication channels where students can report academic challenges and receive timely responses. <br> Prioritize students who often face difficulties with the student portal, such as those transitioning to law programs, repeating courses, <br> or changing programs, ensuring their concerns are addressed fairly and quickly."
-  
-  let foMani = document.getElementsByClassName('test')[3]
-  let foManiText = "Liaise directly with the IT department on behalf of students to address problems with the student portal, especially during registration and exam result periods. <span>more</span>";
-  let foManiChange = "Liaise directly with the IT department on behalf of students to address problems with the student portal, especially during registration and exam result periods. <br> Advocate for long-term solutions to prevent recurring frustrations. <br> Specifically, I will push for a system that ensures the portal only opens for student access once all grades have been published. This will reduce congestion, improve fairness, and restore trust in the academic process."
-
-  // let plan = document.getElementsByClassName('test')[4]
-  // let planText = "Advocate for more industry seminars and career talks to connect students with professionals.<span>more</span>";
-  // let planChange = "Advocate for more industry seminars and career talks to connect students with professionals. Forge partnerships to create internship and mentorship opportunities with companies and alumni. Implement practical workshops for skill development and building a professional online presence to enhance employability."
-
-  const changeText = (test, text1, text2) => {
-  test.innerHTML = text1
-  test.addEventListener('click', () => {
-    test.innerHTML === text1 ? test.innerHTML = text2 : 
-    test.innerHTML = text1;    
-})
-}
-
-changeText(fMani, fManiText, fManiChange)
-changeText(sMani, sManiText, sManiChange)
-changeText(tMani, tManiText, tManiChange)
-changeText(foMani, foManiText, foManiChange)
-changeText(plan, planText, planChange)
-</script>
-
 </html>
